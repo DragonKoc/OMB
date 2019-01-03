@@ -12,6 +12,15 @@ public class GreetingsRandomizer {
         greetings.add("Zdarova");
         greetings.add("Zdorovin'ki buly!");
         greetings.add("Hi!");
+        greetings.add("Hi");
+        greetings.add("hi");
+        greetings.add("privet");
+        greetings.add("привет");
+        greetings.add("Привет");
+        greetings.add("ПРИВЕТ");
+        greetings.add("привет!");
+        greetings.add("Привет!");
+        greetings.add("ПРИВЕТ!");
     }
 
     public String getRandomGreeting() {
