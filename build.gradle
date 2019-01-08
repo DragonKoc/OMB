@@ -39,3 +39,13 @@ dependencies {
 jar {
 baseName = 'jar-gradle'
 }
+
+task stage {
+    dependsOn build
+}
+
+shadowJar {
+    mergeServiceFiles()
+    exclude 'META-INF/*.DSA'
+    exclude 'META-INF/*.RSA'
+}
