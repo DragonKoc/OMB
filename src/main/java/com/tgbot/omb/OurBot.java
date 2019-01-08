@@ -53,17 +53,15 @@ public class OurBot extends TelegramLongPollingBot {
     @Override
     public String getBotUsername() {
         // variable heroku Config Vars
-        //return System.getenv("username");
-        return "opravday_macbook_bot";
+        return System.getenv("username");
+        
     }
 
     @Override
     public String getBotToken() {
         // variable heroku Config Vars
-        //return System.getenv("token");
+        return System.getenv("token");
         //return null; //add our key
-        return "709217752:AAEvjRxFKJjejPE0q-3lOG_1k1_AR4rpaWo";
-
     }
 
 }
