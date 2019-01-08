@@ -37,7 +37,7 @@ dependencies {
 }
 
 task wrapper(type: Wrapper) {
-	gradleVersion = '2.0'
+	gradleVersion = '4.4'
 }
 
 jar {
@@ -48,8 +48,8 @@ task stage {
     dependsOn build
 }
 
-shadowJar {
-    mergeServiceFiles()
-    exclude 'META-INF/*.DSA'
-    exclude 'META-INF/*.RSA'
-}
+//shadowJar {
+//    mergeServiceFiles()
+//    exclude 'META-INF/*.DSA'
+//    exclude 'META-INF/*.RSA'
+//}
