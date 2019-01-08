@@ -36,6 +36,10 @@ dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-web-services')
 }
 
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.0'
+}
+
 jar {
 baseName = 'jar-gradle'
 }
