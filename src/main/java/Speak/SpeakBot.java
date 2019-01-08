@@ -15,6 +15,8 @@ public class SpeakBot {
         Message message = incomingMessage;
         String responseMessage = null;
 
+        //greetingsRandomizer.getRandomGreeting().toLowerCase();
+
 
         if (message.getText().contains("/")) {
 
@@ -23,7 +25,7 @@ public class SpeakBot {
                     responseMessage = "Привет, это мое первое сообщение";
                     break;
                 case "/help":
-                    responseMessage = "Чаво тебе?";
+                    responseMessage = "Чаво тебе?\n Пока я не знаю еше актуальных тем для рахговоров... но научусь)";
                     break;
                 case "/setting":
                     responseMessage = "Приступим к настройкам...";
@@ -31,12 +33,12 @@ public class SpeakBot {
                 //fixme
             }
 
-        } else if (greetingsRandomizer.greetings.contains(message.getText())) {
+        } else if (greetingsRandomizer.greetings.contains(message.getText().toLowerCase())) {
 
             responseMessage = greetingsRandomizer.getRandomGreeting();
         } else {
 
-            responseMessage = "Дядя говорит " + message.getText();
+            responseMessage = "Вы говорите " + message.getText();
 
         }
 
