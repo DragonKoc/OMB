@@ -30,5 +30,6 @@ public class GreetingsRandomizer {
             return response + ", я телеграм бот, который живет на классном ноутбуке Кости.";
         else
             return response + ", ya telegram-bot kotoriy zhivet na klassnom krasivom noutbuke Kosti.";
+
     }
 }
