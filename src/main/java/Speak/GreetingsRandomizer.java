@@ -8,11 +8,14 @@ public class GreetingsRandomizer {
     public List<String> greetings = new ArrayList<>();
 
     GreetingsRandomizer() {
+
         greetings.add("Zdarova");
         greetings.add("Zdorovin'ki buly!");
         greetings.add("Hi!");
         greetings.add("Hi");
         greetings.add("hi");
+        greetings.add("hello");
+        greetings.add("hello!");
         greetings.add("privet");
         greetings.add("привет");
         greetings.add("Привет");
