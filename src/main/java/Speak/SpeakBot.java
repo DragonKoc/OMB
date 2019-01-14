@@ -37,8 +37,9 @@ public class SpeakBot {
                 //fixme
             }
 
-        }
-        // greetings
+        } else if (message.getText().toLowerCase().contains("ghbdtn"))
+            responseMessage = "смени расскладку... \uD83D\uDE0F";
+            // greetings
         else if (greetingsRandomizer.greetings.contains(message.getText().toLowerCase())) {
 
             responseMessage = greetingsRandomizer.getRandomGreeting();
