@@ -59,7 +59,7 @@ public class OurBot extends TelegramLongPollingBot {
         // variable heroku Config Vars
         //return System.getenv("token");
         // return null; //add our key
-        return "709217752:AAEvjRxFKJjejPE0q-3lOG_1k1_AR4rpaWo";
+        //return "709217752:AAEvjRxFKJjejPE0q-3lOG_1k1_AR4rpaWo";
     }
 
 }
